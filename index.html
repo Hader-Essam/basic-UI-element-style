@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Glassmorphism UI System</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- خلفية إضاءات نيون متدرجة -->
+  <div class="ambient-light light-1"></div>
+  <div class="ambient-light light-2"></div>
+
+  <main class="ui-wrapper">
+    <header class="ui-header">
+      <div class="badge-main"><i class="fa-solid fa-sparkles"></i> UI Kit v2.0</div>
+      <h1>Interactive Component Design</h1>
+      <p>A consistent, accessible, and high-performance UI element collection.</p>
+    </header>
+
+    <div class="ui-grid">
+      
+      <!-- 1. Buttons & Controls Section -->
+      <section class="glass-card">
+        <div class="card-title">
+          <span class="icon-box"><i class="fa-solid fa-gamepad"></i></span>
+          <h3>Action Buttons</h3>
+        </div>
+        <div class="component-box horizontal">
+          <button class="btn btn-glow">
+            <span>Primary Action</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+          
+          <button class="btn btn-glass">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Secondary</span>
+          </button>
+
+          <button class="btn btn-icon-only" aria-label="Settings">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- 2. Inputs & Forms Section -->
+      <section class="glass-card">
+        <div class="card-title">
+          <span class="icon-box"><i class="fa-solid fa-sliders"></i></span>
+          <h3>Form Controls & Inputs</h3>
+        </div>
+        <div class="component-box vertical">
+          
+          <div class="input-group">
+            <label>Email Address</label>
+            <div class="input-inner">
+              <i class="fa-solid fa-at input-icon"></i>
+              <input type="email" placeholder="hadeer@example.com" class="input-glow">
+              <span class="input-focus-line"></span>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label>Custom Dropdown</label>
+            <div class="select-inner">
+              <i class="fa-solid fa-layer-group select-icon"></i>
+              <select class="select-glow">
+                <option value="" disabled selected>Select Framework...</option>
+                <option value="react">React.js & TypeScript</option>
+                <option value="tailwind">Tailwind CSS</option>
+                <option value="next">Next.js Framework</option>
+              </select>
+              <i class="fa-solid fa-chevron-down arrow-icon"></i>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 3. Status Badges & Switches -->
+      <section class="glass-card full-width">
+        <div class="card-title">
+          <span class="icon-box"><i class="fa-solid fa-chart-pie"></i></span>
+          <h3>Status Indicators & Toggles</h3>
+        </div>
+        
+        <div class="component-box horizontal space-between">
+          
+          <div class="badges-row">
+            <span class="status-badge active">
+              <span class="pulse-dot"></span> Online System
+            </span>
+            <span class="status-badge warning">
+              <i class="fa-solid fa-clock"></i> Pending Review
+            </span>
+            <span class="status-badge info">
+              <i class="fa-solid fa-code-commit"></i> v2.4.0
+            </span>
+          </div>
+
+          <!-- Toggle Switch -->
+          <div class="toggle-wrapper">
+            <span>Dark Mode</span>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider"></span>
+            </label>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
